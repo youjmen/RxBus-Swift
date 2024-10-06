@@ -168,6 +168,10 @@ public final class RxBus: CustomStringConvertible {
     }
     
     // MARK: -
+    public func removeAllSubscription(){
+        subjects.removeAll()
+        subscriptionCounts.removeAll()
+    }
     
     public func removeAllStickys() {
         stickyMap.removeAll()
